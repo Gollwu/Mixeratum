@@ -1,0 +1,129 @@
+.navigation{
+    margin: 0px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1.4px;		
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:30px;
+}
+
+.navigation .item{
+    position:relative;		
+	float:left;	
+	top:20px;
+	height:200px;
+}
+
+ a.back{
+	background:transparent url(back.png) no-repeat top left;
+	position:fixed;
+	width:150px;
+	height:27px;
+	outline:none;
+	bottom:0px;
+	left:0px;
+}
+
+.collectif{	
+	
+}
+.projets{	
+	
+}
+.dates{	
+	
+}
+.liens{	
+	
+}
+.contact{	
+
+}
+.cave{
+	
+}
+
+a.icon{
+    width:60px;
+    height:52px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    cursor:pointer;
+}
+.collectif a.icon{
+    background:transparent url(../images/bassine.png) no-repeat 0px 0px;
+}
+.projets a.icon{
+    background:transparent url(../images/bassine.png) no-repeat 0px 0px;
+}
+.dates a.icon{
+    background:transparent url(../images/casserole.png) no-repeat 0px 0px;
+}
+.liens a.icon{
+    background:transparent url(../images/chaussure.png) no-repeat 0px 0px;
+}
+.contact a.icon{
+    background:transparent url(../images/casserole.png) no-repeat 0px 0px;
+}
+.cave a.icon{
+    background:transparent url(../images/chaussure.png) no-repeat 0px 0px;
+}
+
+.navigation .item a.active{
+    background-position:0px -52px;
+}
+.item img.circle{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:52px;
+    height:52px;
+    opacity:0.1;
+}
+.item h2{
+	text-align:center;
+    position:relative;
+    width:147px;
+    height:20px;
+    color:#222;
+    font-size:13px;
+    top:40px;
+    left:-48px;
+    text-indent:6px;
+    line-height:20px;
+    text-shadow:1px 1px 1px #fff;
+    text-transform:uppercase;
+}
+.item h2.active{
+    color:#fff;
+    text-shadow:1px 0px 1px #555;
+}
+.item ul{
+    list-style:none;
+    position:absolute;
+    top:80px;
+    left:-85px;
+    display:none;
+}
+.item ul li a{
+	text-align:center;
+    font-size:11px;
+    text-decoration:none;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#222;
+    padding:3px;
+    float:left;
+    clear:both;
+    width:150px;
+    text-shadow:1px 1px 1px #fff;
+}
+.item ul li a:hover{
+	font-weight: bold;
+	font-size:13px;
+}
+

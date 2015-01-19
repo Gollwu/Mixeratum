@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Mixeratum</title>
+		<!-- Style of the page -->
+		<link href="css/page.css" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>   			
+        
+        <style>		
+            body{                
+                background:#fff url(images/bg.png) no-repeat top left;
+				background-size: 100% auto;
+            }	
+			
+			#loading_div{
+				width:300px;
+				margin-left:auto;	
+				margin-right:auto;
+			}
+       </style>
+    </head>
+
+    <body>
+		<div class="logo_main">
+			<img src="images/logo.png" /> 
+		</div>	 
+		<div id="loading_div">
+			<img src="images/mixeur1.png" id="loading" onclick="location.href='main.html';">         
+		</div>	
+   </body>
+	
+	<script>		
+		function moveMixer(){				
+			setTimeout(function(){
+                document.getElementById("loading").src="images/mixeur1.png";
+                setTimeout(function(){
+                    document.getElementById("loading").src="images/mixeur2.png";		
+                    setTimeout(function(){
+                        document.getElementById("loading").src="images/mixeur3.png";	
+                        setTimeout(function(){
+                            document.getElementById("loading").src="images/mixeur4.png";
+							setTimeout(function(){
+								document.getElementById("loading").src="images/mixeur3.png";
+								 setTimeout(function(){
+									document.getElementById("loading").src="images/mixeur2.png";
+									setTimeout(function(){
+										document.getElementById("loading").src="images/mixeur1.png";				
+									},250);	
+								},250);					
+							},250);											
+                        },250);				
+                    },250);			
+                },250);
+            },250);			
+		}		
+		setInterval(moveMixer, 1750);
+	</script>
+</html>

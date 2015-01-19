@@ -1,0 +1,121 @@
+/*
+ * Globals
+ */
+
+body {
+	
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;	
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.masthead {  
+	height:200px;	
+}
+
+.logo_main{
+	width:385px;
+	margin-left:auto;	
+	margin-right:auto;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: normal;
+  font: normal normal normal 40px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+.description {
+  font-size: 20px;
+  color: #999;
+}
+
+.font1{
+	font: normal normal normal 20px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Modal Windows */
+
+.modal {
+	background-image:url(../images/yellowbg.png);	
+	position:absolute;
+	max-height:800px;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+
+
+/*
+ * Footer
+ */
+
+.footer {
+  padding: 40px 0;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p:last-child {
+  margin-bottom: 0;
+}
+
+.footer p {
+	text-indent:3em; 
+	margin:0px;
+}
