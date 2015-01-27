@@ -36,7 +36,7 @@ h6, .h6 {
 }
 
 .logo_main{
-	width:385px;
+	width:850px;
 	margin-left:auto;	
 	margin-right:auto;
 }
@@ -79,7 +79,7 @@ h6, .h6 {
 /* Modal Windows */
 
 .modal {
-	background-image:url(../images/yellowbg.png);	
+	background-image:url(../images/bg1.jpg);	
 	position:absolute;
 	max-height:800px;
 }
