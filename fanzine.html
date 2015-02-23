@@ -18,6 +18,8 @@
 	
 	<!-- Style of the navigation -->
 	<link href="css/navigation.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,7 +29,11 @@
     <![endif]-->
   </head>
 
-  <body background="images/bg.png" bgproperties="fixed">
+  <body background="images/bg.png" bgproperties="fixed">		
+	<div class="logo_main">
+		<img src="images/mixer_accueil.png" style="cursor:pointer; float:left; margin-top:80px;" onclick="location.href='main.html';" width="150" height="150"/> 
+		<img src="images/logo2.png" width="500" height="230"/> 		
+	</div>	
 	<div class="masthead">
 		<div class="container">		
 			<div class="navigation" id="nav">
@@ -95,31 +101,34 @@
 		</div>	
     </div>  
 	
-    <div class="container">	
+	
+	
+    <div class="container">		
+
+	  <div class="header">
+			<h1 class="title">Fanzine</h1>			
+			<HR align="left" width="90%" style="height: 1px;  border: 0; border-top: 1px solid #000;">
+	  </div>  
 		
-
-		<div class="header">
-			<h1 class="title">The Bootstrap Blog</h1>
-			<p class="lead description">The official example template of creating a blog with Bootstrap.</p>
-		</div>
-
       <div class="row">
-
-        <div class="col-sm-12 main">
-
-          
-
+        <div class="col-sm-12 main">	
+			<img src="images/fanzine1.jpg" onclick="location.href='fanzines/fanzine1.pdf';" style="cursor:pointer; margin-left:40px; margin-bottom:20px; -ms-transform: rotate(7deg); -webkit-transform: rotate(7deg); transform: rotate(7deg);"/>
+			<img src="images/fanzine2.jpg" onclick="location.href='fanzines/fanzine2.pdf';" style="cursor:pointer; margin-left:40px; margin-bottom:20px; -ms-transform: rotate(-10deg); -webkit-transform: rotate(-10deg); transform: rotate(-10deg);"/>
+			<img src="images/fanzine3.jpg" onclick="location.href='fanzines/fanzine3.pdf';" style="cursor:pointer; margin-left:40px; margin-bottom:20px; -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg); transform: rotate(2deg);"/>
+			<img src="images/fanzine4.jpg" onclick="location.href='fanzines/fanzine4.pdf';" style="cursor:pointer; margin-left:40px; margin-bottom:20px; -ms-transform: rotate(-15deg); -webkit-transform: rotate(-15deg); transform: rotate(-15deg);"/>
+			<img src="images/fanzine5.jpg" onclick="location.href='fanzines/fanzine5.pdf';" style="cursor:pointer; margin-left:40px; margin-bottom:20px; -ms-transform: rotate(15deg); -webkit-transform: rotate(15deg); transform: rotate(15deg);"/>
+			<img src="images/fanzine6.jpg" onclick="location.href='fanzines/fanzine6.pdf';" style="cursor:pointer; margin-left:40px; margin-bottom:20px; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); transform: rotate(-7deg);"/>
+			<img src="images/fanzine7.jpg" onclick="location.href='fanzines/fanzine7.pdf';" style="cursor:pointer; margin-left:40px; margin-bottom:20px; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); transform: rotate(-7deg);"/>
         </div><!-- /.main --> 
-
       </div><!-- /.row -->
 
     </div><!-- /.container -->
-
+	<div class="md-overlay"></div>
+	</br>
     <footer class="footer">
 	  <p> Le collectif Mixeratum [Ergo Sum] est une association Loi 1901 - Nº SIRET 79006592400017- Code APE: 9001Z - Licence n°2-1075602</p> 
 	  <p style="font-weight: bold;"> Le Collectif Mixeratum [Ergo Sum] bénéficie d'un rescrit fiscal.</p> 
-	  <p style="font-weight: bold;"> Vos dons sont déductibles lors de votre déclaration d'impôts à hauteur de 60% du montant versé. Soutenez Mixeratum!</p> 
-      <p>©2015 Mixeratum Ergo Sum</p>   
+	  <p style="font-weight: bold;"> Vos dons sont déductibles lors de votre déclaration d'impôts à hauteur de 60% du montant versé. Soutenez Mixeratum!</p>
     </footer>
 
 	<!-- JavaScript for navigation tab -->
@@ -157,6 +166,9 @@
 			}
 		);
 		});
+		
+		
+		
 	</script>
 
 
@@ -168,5 +180,20 @@
     <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Modal Windows
+    ================================================== -->
+	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script src="js/cssParser.js"></script>
+	<script src="js/css-filters-polyfill.js"></script>
   </body>
 </html>

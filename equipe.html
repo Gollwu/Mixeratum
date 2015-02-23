@@ -30,6 +30,7 @@
   </head>
 
   <body background="images/bg.png" bgproperties="fixed">	
+	<div id="cover" onclick="closeModals();" style="display:none"></div>
 	<div class="logo_main">
 		<img src="images/mixer_accueil.png" style="cursor:pointer; float:left; margin-top:80px;" onclick="location.href='main.html';" width="150" height="150"/> 
 		<img src="images/logo2.png" width="500" height="230"/> 		
@@ -108,9 +109,7 @@
 	  <div class="header">
 			<h1 class="title">L'Équipe</h1>			
 			<HR align="left" width="90%" style="height: 1px;  border: 0; border-top: 1px solid #000;">
-	  </div>
-	  
-	  
+	  </div>  
 		
       <div class="row">
         <div class="col-sm-12 main">
@@ -145,38 +144,18 @@
 				<p></p>
 				<p style="margin-left:50px; margin-right:50px;"> Régisseur aux Marches de l'été à Bordeaux, il apporte sa lumière et ses compétences techniques au collectif Mixeratum Ergo Sum depuis janvier 2014.
 				</p>
-			</div>
-			<div id="modalCeline" class="modal" style="display:none" >
-				<img src="images/close.png" style="right:30px; position:absolute; top:30px; cursor:pointer;" onclick="closeModals();"/>	
-				<h4 class="font1" style="margin-left:60px; margin-top:140px;"> Céline Sombart </h4>
-				<img src="images/celine.jpg" style="margin-left:50px;" />
-				<p></p>
-				<p style="margin-left:50px; margin-right:50px;"> Plasticienne de formation blablakg qopjf qejgeqjgzmlego ejsqgezsg,selg,oelmjg, esmlg,qklgnezsgoih nerqoglnhresg jezskgnezski
-					zeg ezsmlkg,ezsjngeisgj ezoghzepogkzpe^j gzjopghez sgzegpz^ejgzeopjgze jgzgzej gze
-					zeogjzepogjzeogjzeg ze
-				</p >
-			</div>
-			<div id="modalSophia" class="modal" style="display:none" >
-				<img src="images/close.png" style="right:30px; position:absolute; top:30px; cursor:pointer;" onclick="closeModals();"/>	
-				<h4 class="font1" style="margin-left:60px; margin-top:140px;"> Sophia Hayat </h4>
-				<img src="images/sophia.jpg" style="margin-left:50px;" />
-				<p></p>
-				<p style="margin-left:50px; margin-right:50px;"> Plasticienne de formation blablakg qopjf qejgeqjgzmlego ejsqgezsg,selg,oelmjg, esmlg,qklgnezsgoih nerqoglnhresg jezskgnezski
-					zeg ezsmlkg,ezsjngeisgj ezoghzepogkzpe^j gzjopghez sgzegpz^ejgzeopjgze jgzgzej gze
-					zeogjzepogjzeogjzeg ze
-				</p>
-			</div>
+			</div>		
 			<img src="images/clementine.jpg" height="237" width="200" onclick="showModal('Clem')";  style="cursor:pointer; margin-left:10px;"></img>
 			<img src="images/natacha.jpg" height="237" width="200" onclick="showModal('Natacha')"; style="cursor:pointer; margin-left:10px;"/> 
 			<img src="images/sandra.jpg" height="237" width="200" onclick="showModal('Sandra')"; style="cursor:pointer; margin-left:10px;"/> 
 			<img src="images/marius.jpg" height="237" width="200" onclick="showModal('Marius');" style="cursor:pointer; margin-left:10px;"/> 
 			<div style="width:130px;  float:left; margin-top:29px">
 				<h4 class="font1" style="text-align:center;"> Présidente </h4>
-				<img src="images/celine.jpg" height="149" width="125" onclick="showModal('Celine');" style="cursor:pointer;"/> 
+				<img src="images/celine.jpg" height="149" width="125"  style="cursor:pointer;"/> 
 			</div>	
 			<div style="width:130px; float:left; margin-left:40px">
 				<h4 class="font1" style="text-align:center;"> Membre d'honneur </h4>
-				<img src="images/sophia.jpg" height="149" width="125" onclick="showModal('Sophia');" style="cursor:pointer;"/> 
+				<img src="images/sophia.jpg" height="149" width="125" style="cursor:pointer;"/> 
 			</div>	
         </div><!-- /.main --> 
       </div><!-- /.row -->
@@ -228,6 +207,7 @@
 		
 		function showModal(name){		
 			document.getElementById("modal"+name).style.display="block";
+			document.getElementById('cover').style.display="block";
 		}
 		
 		function closeModals(){		
@@ -237,7 +217,8 @@
 						> -1) {
 					elems[i].style.display="none";
 				}
-			}			
+			}		
+			document.getElementById('cover').style.display="none";
 		}
 		
 	</script>

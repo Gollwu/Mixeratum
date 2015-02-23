@@ -55,22 +55,22 @@ a.icon{
     cursor:pointer;
 }
 .collectif a.icon{
-    background:transparent url(../images/bassine.png) no-repeat 0px 0px;
+    background:transparent url(../images/bassinesite.png) no-repeat 0px 0px;
 }
 .projets a.icon{
-    background:transparent url(../images/bassine.png) no-repeat 0px 0px;
+    background:transparent url(../images/camerasite.png) no-repeat 0px 0px;
 }
 .dates a.icon{
-    background:transparent url(../images/casserole.png) no-repeat 0px 0px;
+    background:transparent url(../images/casserolesite.png) no-repeat 0px 0px;
 }
 .liens a.icon{
-    background:transparent url(../images/chaussure.png) no-repeat 0px 0px;
+    background:transparent url(../images/chaussuressite.png) no-repeat 0px 0px;
 }
 .contact a.icon{
-    background:transparent url(../images/casserole.png) no-repeat 0px 0px;
+    background:transparent url(../images/poireausite.png) no-repeat 0px 0px;
 }
 .cave a.icon{
-    background:transparent url(../images/chaussure.png) no-repeat 0px 0px;
+    background:transparent url(../images/poissonsite.png) no-repeat 0px 0px;
 }
 
 .navigation .item a.active{
