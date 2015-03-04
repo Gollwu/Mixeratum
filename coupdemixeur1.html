@@ -20,6 +20,9 @@
 	<link href="css/navigation.css" rel="stylesheet">
 	
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
+      
+    <!-- Photopile -->  
+    <link href="css/photopile.css" rel="stylesheet">	  
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -106,7 +109,7 @@
     <div class="container">				
 
 		<div class="header">
-			<h1 class="title" style="float:left">Soirées Coup de Mixeur</h1>         
+			<h1 class="title" style="float:left">Un premier coup de mixeur #1 - 2013</h1>         
             <img src="images/mixer_accueil.png" style="width:100px; height:auto; cursor:pointer; margin-botton:-30px;" onclick="location.href='mixeur.html';">
 			<HR align="left" width="90%" style="height: 1px;  border: 0; border-top: 1px solid #000;">
 		</div>
@@ -114,19 +117,57 @@
       <div class="row">
 
         <div class="col-sm-12 main">
-            <span class="title" style="font-size:26px">Soirée culturelle spatialement modulable</span>
-            <p>Concept culturel et convivial qui propose d'adapter pour un lieu une courte forme scénique, une séance photo au sein de notre FOTOCABINE , des projections vidéo et notre gaspacho artisanal </p>
-            <div style="text-align:center">
-                <img src="images/visuelvert.png">
-                <img src="images/visuelbleu.png">
-                <img src="images/visuelrouge.png"> 
-            </div>    
-            </br>
-            <a class="title" style="font-size:24px; text-decoration: underline; color:#000000" href="coupdemixeur1.html">Coup de Mixeur # 1</a>
-            </br>
-            <a class="title" style="font-size:24px; text-decoration: underline; color:#000000" href="coupdemixeur2.html">Coup de Mixeur # 2</a>
-            </br></br>
-            <a class="title" style="font-size:22px; text-decoration: underline; color:#C91212" href="pdf/coupsdemixeur.pdf">DOSSIER DU PROJET</a>
+            <div style="height:400px;">
+                <div style="width:170px; float:left;">
+                     <img src="images/visuelbleu.png" style="float:left"/>
+                     <img src="images/fotocabine2.png" style="float:right; width:106px; height:151px; cursor:pointer;" onclick="location.href='fotocabine1.html';"/>
+                </div>               
+                <img src="images/cdm1/04052013/galerie23.png" style="margin-top:20px; margin-left:40px; cursor:pointer; border: 2px solid rgba(0, 0, 0, 1); float:left; margin-right:10px;" onclick="location.href='http://galerie-bordeaux.fr/';"/>
+                <div>        
+                    <p style="height:1px;"></p>
+                    <h1 class="title" style="font-size:22px;">Soirée du Samedi 4 mai 2013 à la Galerie 23</h1>
+                    <p style="margin:0">Performance : Marina Jorge, Alexis Barck, Céline Sombart</p>
+                    <p style="margin:0">Mise en scène : Clémentine Aubry et Natacha Roscio</p>
+                    <p style="margin:0">Scénographie et assistantes à la mise en scène : Sandra Calvente Lopez et Sophia Hayat</p>
+
+                    <p style="">Photographe : Sandra Calvente Lopez</p>
+                    <p style="margin:0">Vidéos : Collectif Mixeratum Ergo Sum + Natacha Roscio</p>
+
+                    <p style="">Merci encore à Nicolas pour son accueil à la galerie et pour cette heureuse première collaboration.​</p>
+                    <p style="margin:0">Un grand merci aussi à Sylvain pour sa précieuse aide technique et lumineuse, à Abel pour son coup de main indispensable pour un bon coup de mixeur, à nos chers intrépides performeurs                     et à tous les curieux qui sont passés nous voir!</p>
+                    <p style="margin:0">Les performances ont performé, le gaspacho a coulé à flots et la Fotocabine a bien tourné...    </p>
+                </div> 
+                <div class="photopile-wrapper" style="">
+                  <ul class="photopile">
+                    <li>
+                      <a href="images/cdm1/04052013/1.png">
+                        <img src="images/cdm1/04052013/thumbs/1.jpg" alt=""  />
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="images/cdm1/04052013/2.png">
+                        <img src="images/cdm1/04052013/thumbs/2.jpg" alt=""  />
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="images/cdm1/04052013/3.png">
+                        <img src="images/cdm1/04052013/thumbs/3.jpg" alt=""  />
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="images/cdm1/04052013/4.png">
+                        <img src="images/cdm1/04052013/thumbs/4.jpg" alt=""  />
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="images/cdm1/04052013/5.png">
+                        <img src="images/cdm1/04052013/thumbs/5.jpg" alt=""  />
+                      </a>
+                    </li>   
+                  </ul>
+                </div>
+            </div>
+            
 		</div><!-- /.main --> 
 
       </div><!-- /.row -->
@@ -180,6 +221,11 @@
 		}
 	</script>
 
+    <!-- Photopile -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+    <script src="js/photopile.js"></script>
+    <script src="js/jquery.ui.touch-punch.js"></script>    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
