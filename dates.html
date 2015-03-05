@@ -18,6 +18,8 @@
 	
 	<!-- Style of the navigation -->
 	<link href="css/navigation.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,7 +29,12 @@
     <![endif]-->
   </head>
 
-  <body background="images/bg.png" bgproperties="fixed">
+  <body background="images/bg.png" bgproperties="fixed">  
+    <img src="images/mixer_accueil.png" id="mixer_accueil" onclick="location.href='main.html';" width="150" height="150" />    
+	<div id="cover" onclick="closeModals();" style="display:none"></div>
+	<div class="logo_main">		
+		<img src="images/logo2.png" width="500" height="230"/> 		
+	</div>	
 	<div class="masthead">
 		<div class="container">		
 			<div class="navigation" id="nav">
@@ -95,31 +102,35 @@
 		</div>	
     </div>  
 	
-    <div class="container">	
-		
+	
+	
+    <div class="container">				
 
 		<div class="header">
-			<h1 class="title">The Bootstrap Blog</h1>
-			<p class="lead description">The official example template of creating a blog with Bootstrap.</p>
+			<h1 class="title">Futures dates</h1>			
+			<HR align="left" width="90%" style="height: 1px;  border: 0; border-top: 1px solid #000;">
 		</div>
-
+		
       <div class="row">
 
         <div class="col-sm-12 main">
-
-          
-
+			
         </div><!-- /.main --> 
-
+            <div class="event">
+                    <img src="images/festival_caves.png" style="float:left; margin-top:20px; margin-left:20px; margin-right:20px">  
+                    <div style="margin-top:20px;">
+                        <h1 class="title" style="color:#C91212; font-size:28px; margin-left:30px;">Coup de mixeur</h1>
+                        <p style="margin-left:40px;">Halle des Chartrons, 33000 Bordeaux</p> 
+                    </div>
+            </div>
       </div><!-- /.row -->
 
     </div><!-- /.container -->
-
+	</br>
     <footer class="footer">
 	  <p> Le collectif Mixeratum [Ergo Sum] est une association Loi 1901 - Nº SIRET 79006592400017- Code APE: 9001Z - Licence n°2-1075602</p> 
 	  <p style="font-weight: bold;"> Le Collectif Mixeratum [Ergo Sum] bénéficie d'un rescrit fiscal.</p> 
-	  <p style="font-weight: bold;"> Vos dons sont déductibles lors de votre déclaration d'impôts à hauteur de 60% du montant versé. Soutenez Mixeratum!</p> 
-      <p>©2015 Mixeratum Ergo Sum</p>   
+	  <p style="font-weight: bold;"> Vos dons sont déductibles lors de votre déclaration d'impôts à hauteur de 60% du montant versé. Soutenez Mixeratum!</p>
     </footer>
 
 	<!-- JavaScript for navigation tab -->
@@ -157,6 +168,22 @@
 			}
 		);
 		});
+		
+		function showModal(name){		
+			document.getElementById("modal"+name).style.display="block";
+			document.getElementById('cover').style.display="block";
+		}
+		
+		function closeModals(){		
+			var elems = document.getElementsByTagName('*'), i;
+			for (i in elems) {
+				if((' ' + elems[i].className + ' ').indexOf('modal')
+						> -1) {
+					elems[i].style.display="none";
+				}
+			}		
+			document.getElementById('cover').style.display="none";
+		}
 	</script>
 
 

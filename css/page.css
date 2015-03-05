@@ -182,3 +182,11 @@ h6, .h6 {
 	text-indent:3em; 
 	margin:0px;
 }
+
+.event {
+    width:600px;
+    height:200px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#ffffff;
+}
