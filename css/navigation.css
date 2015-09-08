@@ -97,10 +97,12 @@ a.icon{
     line-height:20px;
     text-shadow:1px 1px 1px #fff;
     text-transform:uppercase;
+	cursor: default;
 }
 .item h2.active{
     color:#fff;
     text-shadow:1px 0px 1px #555;
+	cursor: default;
 }
 .item ul{
     list-style:none;
