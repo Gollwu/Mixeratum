@@ -12,7 +12,7 @@
 
 .navigation .item{
     position:relative;		
-	float:left;	
+	float:left;	    
 	top:20px;
 	height:200px;
 }
@@ -51,7 +51,7 @@ a.icon{
     height:52px;
     position:absolute;
     top:0px;
-    left:0px;
+    left:25px;
     cursor:pointer;
 }
 .collectif a.icon{
@@ -87,7 +87,7 @@ a.icon{
 .item h2{
 	text-align:center;
     position:relative;
-    width:147px;
+    width:201px;
     height:20px;
     color:#222;
     font-size:13px;
@@ -108,7 +108,7 @@ a.icon{
     list-style:none;
     position:absolute;
     top:80px;
-    left:-85px;
+    left:-60px;
     display:none;
 }
 .item ul li a{

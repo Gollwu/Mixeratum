@@ -6,7 +6,7 @@
 					'width'     :'199px',
 					'height'    :'199px',
 					'top'       :'-10px',
-					'left'      :'-72px',
+					'left'      :'-50px',
 					'opacity'   :'1.0'
 				},500,'easeOutBack',function(){
 					$(this).parent().find('ul').fadeIn(700);
