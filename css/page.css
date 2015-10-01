@@ -62,6 +62,7 @@ h6, .h6 {
 
 .masthead {  
 	height:370px;	
+        margin-top: -50px;
 }
 
 
@@ -76,8 +77,7 @@ h6, .h6 {
 }
 
 #mixer_accueil{	
-	cursor:pointer; 	
-	margin-top:80px;       	
+	cursor:pointer; 	       	
     float:left;
     margin-left:0%;
 }

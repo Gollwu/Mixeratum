@@ -51,8 +51,8 @@ a.icon{
     height:52px;
     position:absolute;
     top:0px;
-    left:25px;
-    cursor:pointer;
+    left:25px;    
+    cursor:default;
 }
 .collectif a.icon{
     background:transparent url(../images/bassinesite.png) no-repeat 0px 0px;
