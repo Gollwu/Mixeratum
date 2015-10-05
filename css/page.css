@@ -56,6 +56,9 @@ h6, .h6 {
   }
 }
 
+#facebook_logo{
+    cursor:pointer;   
+}
 
 /*
  * Masthead for nav
@@ -63,7 +66,8 @@ h6, .h6 {
 
 .masthead {  
 	height:370px;	
-        margin-top: -50px;
+    margin-top: -50px;
+    margin-left: 40px;
 }
 
 
